@@ -15,13 +15,15 @@ public class Piramid2 {
        int i,j,k,n;
        System.out.print("Masukan jumlah baris: ");
        n=m.nextInt();
-       for(i=0;i<n;i++){
-           for(j=n;j>=i;j--);
-            System.out.print(" ");
-       }
-       for(k=0;k<=i;k++){
-           System.out.print(k);
-       }
-       System.out.println();
+
+        for (i = 0; i <= n; i++) {
+            for (j = 0; j <= i; j++) {
+                System.out.printf(" ");
+            }
+            for ( k = n; k >= i; k--) {
+                System.out.print("*" + " ");
+            }
+            System.out.println();
+        }
     }
 }
